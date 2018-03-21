@@ -109,10 +109,10 @@ public class UI extends Application {
     }
 
     /**
-     * Find and set the ScrollPane so that Labels can be added to it from the ButtonExtensions.
+     * Find and set the labelPane so that Labels can be added to it from the ButtonExtensions.
      */
     private void setLabelPane() {
-                for(Node node : window.getChildren()) {
+        for(Node node : window.getChildren()) {
             Object nodeData = node.getUserData();
             if (nodeData != null) {
                 if((nodeData).equals("labelPane")) {
